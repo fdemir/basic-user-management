@@ -3,6 +3,7 @@
 It's an example restful api that contains basic user crud actions. It's not contains express library.
 
 ## Prerequisities
+
 In order to run this projet you'll need docker installed.
 
 - Windows
