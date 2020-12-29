@@ -2,6 +2,8 @@
 
 It's an example restful api that contains basic user crud actions. It's not contains express library.
 
+[API Documentation](https://documenter.getpostman.com/view/11193195/TVt17itF)
+
 ## Prerequisities
 
 In order to run this projet you'll need docker installed.
