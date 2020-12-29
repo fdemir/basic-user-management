@@ -1,0 +1,10 @@
+{
+  "name": "basic-user-management",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^5.11.9",
+    "route-parser": "^0.0.5"
+  }
+}
