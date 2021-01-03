@@ -11,7 +11,7 @@ router.register("GET", "/user", UserController.index);
 router.register("GET", "/user/:tckn", UserController.show);
 router.register("POST", "/user", UserController.store);
 router.register("PUT", "/user/:tckn", UserController.update);
-router.register("DELETE", "/user/:tckn", UserController.delete);
+router.register("DELETE", "/user/:tckn", UserController.remove);
 
 const server = http.createServer((req, res, params) => {
   res.setHeader("Content-Type", "application/json");
