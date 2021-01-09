@@ -1,9 +1,7 @@
 const http = require("http");
-const setupRoutes = require("./src/config/routes");
+require("dotenv").config();
 const connectDatabase = require("./src/config/database");
-
-const port = 8080;
-const hostname = "api";
+const setupRoutes = require("./src/config/routes");
 
 // Databse
 connectDatabase();
@@ -16,6 +14,8 @@ const server = http.createServer((req, res, params) => {
   router.run(req, res, params);
 });
 
-server.listen(port, hostname, () => {
-  console.log(`Server running on ${hostname}:${port}`);
+server.listen(process.env.API_PORT, process.env.API_HOSTNAME, () => {
+  console.log(
+    `Server running on ${process.env.API_HOSTNAME}:${process.env.API_PORT}`
+  );
 });
